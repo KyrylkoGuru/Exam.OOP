@@ -1,0 +1,11 @@
+D:\VisualStudio\Codes\CSharp\Running_button\bin\Debug\Running_button.exe.config
+D:\VisualStudio\Codes\CSharp\Running_button\bin\Debug\Running_button.exe
+D:\VisualStudio\Codes\CSharp\Running_button\bin\Debug\Running_button.pdb
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.csproj.AssemblyReference.cache
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.Form1.resources
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.Properties.Resources.resources
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.csproj.GenerateResource.cache
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.exe
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.pdb
+D:\VisualStudio\Codes\CSharp\Running_button\obj\Debug\Running_button.Form2.resources

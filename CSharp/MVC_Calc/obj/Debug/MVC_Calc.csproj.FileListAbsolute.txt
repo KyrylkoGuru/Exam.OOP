@@ -1,0 +1,12 @@
+D:\VisualStudio\Codes\CSharp\MVC_Calc\bin\Debug\MVC_Calc.exe.config
+D:\VisualStudio\Codes\CSharp\MVC_Calc\bin\Debug\MVC_Calc.exe
+D:\VisualStudio\Codes\CSharp\MVC_Calc\bin\Debug\MVC_Calc.pdb
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.csproj.AssemblyReference.cache
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.Form1.resources
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.Properties.Resources.resources
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.csproj.GenerateResource.cache
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.exe
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.pdb
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.Form2.resources
+D:\VisualStudio\Codes\CSharp\MVC_Calc\obj\Debug\MVC_Calc.Form3.resources

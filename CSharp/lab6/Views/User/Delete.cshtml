@@ -1,0 +1,22 @@
+﻿@model lab6.Models.User
+
+<h2>Видалити користувача</h2>
+
+<h4>Ви впевнені, що хочете видалити цього користувача?</h4>
+<div>
+    <h4>@Model.FirstName @Model.LastName</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Email</dt>
+        <dd>@Model.Email</dd>
+        <dt>Дата реєстрації</dt>
+        <dd>@Model.RegistrationDate.ToShortDateString()</dd>
+    </dl>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <button type="submit">Так, видалити</button>
+    @Html.ActionLink("Ні, повернутися до списку", "Index")
+}

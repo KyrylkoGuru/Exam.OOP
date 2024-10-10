@@ -1,0 +1,43 @@
+﻿@model IEnumerable<lab6.Models.User>
+
+<h2>Список користувачів</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Електронна пошта</th>
+            <th>Дата реєстрації</th>
+            <th>Деталі</th>
+            <th>Дії</th> <!-- Додано для кнопок дій -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.Email</td>
+                <td>@user.RegistrationDate.ToShortDateString()</td>
+                <td><a href="@Url.Action("Details", "User", new { id = user.Id })">Деталі</a></td>
+                <td>
+                    <a href="@Url.Action("Delete", "User", new { id = user.Id })">Видалити</a> <!-- Додано посилання для видалення -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Додати нового користувача</h2>
+
+<form asp-action="Create" method="post">
+    <label>Ім'я</label>
+    <input type="text" name="FirstName" required />
+    <label>Прізвище</label>
+    <input type="text" name="LastName" required />
+    <label>Електронна пошта</label>
+    <input type="email" name="Email" required />
+    <button type="submit">Створити</button>
+</form>

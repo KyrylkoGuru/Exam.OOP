@@ -21,6 +21,11 @@
         @Html.TextBoxFor(m => m.Email)
         @Html.ValidationMessageFor(m => m.Email)
     </div>
+    <div>
+        @Html.LabelFor(m => m.PhoneNumber) <!-- Поле для введення телефону -->
+        @Html.TextBoxFor(m => m.PhoneNumber)
+        @Html.ValidationMessageFor(m => m.PhoneNumber)
+    </div>
 
     <button type="submit">Додати користувача</button>
 }

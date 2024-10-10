@@ -8,9 +8,10 @@
             <th>Ім'я</th>
             <th>Прізвище</th>
             <th>Електронна пошта</th>
+            <th>Номер телефону</th> <!-- Додано для відображення телефону -->
             <th>Дата реєстрації</th>
             <th>Деталі</th>
-            <th>Дії</th> <!-- Додано для кнопок дій -->
+            <th>Дії</th>
         </tr>
     </thead>
     <tbody>
@@ -20,10 +21,11 @@
                 <td>@user.FirstName</td>
                 <td>@user.LastName</td>
                 <td>@user.Email</td>
+                <td>@user.PhoneNumber</td> <!-- Відображення телефону -->
                 <td>@user.RegistrationDate.ToShortDateString()</td>
                 <td><a href="@Url.Action("Details", "User", new { id = user.Id })">Деталі</a></td>
                 <td>
-                    <a href="@Url.Action("Delete", "User", new { id = user.Id })">Видалити</a> <!-- Додано посилання для видалення -->
+                    <a href="@Url.Action("Delete", "User", new { id = user.Id })">Видалити</a>
                 </td>
             </tr>
         }
@@ -39,5 +41,7 @@
     <input type="text" name="LastName" required />
     <label>Електронна пошта</label>
     <input type="email" name="Email" required />
+    <label>Номер телефону</label> <!-- Поле для введення телефону -->
+    <input type="text" name="PhoneNumber" required />
     <button type="submit">Створити</button>
 </form>

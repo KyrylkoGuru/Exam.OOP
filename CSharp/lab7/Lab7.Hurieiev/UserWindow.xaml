@@ -1,0 +1,34 @@
+﻿<Window x:Class="AuthApp.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Користувач" Height="300" Width="300" Background="#F0F0F0">
+    <Window.Resources>
+        <!-- Define a style for buttons without CornerRadius -->
+        <Style x:Key="ElegantButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#6200EE"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <TextBlock Name="WelcomeText" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#333333"/>
+        <Button Content="Вийти" Style="{StaticResource ElegantButtonStyle}" Click="LogoutButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"/>
+    </Grid>
+</Window>

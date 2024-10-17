@@ -1,0 +1,34 @@
+﻿<Window x:Class="AuthApp.UsersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список користувачів" Height="400" Width="300" Background="#F0F0F0">
+    <Window.Resources>
+        <!-- Define a style for buttons without CornerRadius -->
+        <Style x:Key="ElegantButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#6200EE"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <ListBox Name="UsersListBox" Margin="10" VerticalAlignment="Top" Height="320"/>
+        <Button Content="Закрити" Style="{StaticResource ElegantButtonStyle}" Click="CloseButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"/>
+    </Grid>
+</Window>
